@@ -35,11 +35,11 @@ func itemPositionInfo(for node: XNode?) -> String? {
 
 extension Execution {
     
-    public func log(_ type: InfoType, _ message: String, at node: XNode? = nil) {
+    public func log(_ type: InfoType, _ message: String, at node: XNode?) {
         self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode? = nil) {
+    public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode?) {
         self.log(type, message, at: itemPositionInfo(for: node))
     }
     
@@ -55,11 +55,11 @@ extension Execution {
 
 extension AsyncExecution {
     
-    public func log(_ type: InfoType, _ message: String, at node: XNode? = nil) async {
+    public func log(_ type: InfoType, _ message: String, at node: XNode?) async {
         await self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode? = nil) async {
+    public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode?) async {
         await self.log(type, message, at: itemPositionInfo(for: node))
     }
     
