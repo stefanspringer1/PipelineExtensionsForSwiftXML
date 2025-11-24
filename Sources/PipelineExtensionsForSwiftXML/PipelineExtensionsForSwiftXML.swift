@@ -43,11 +43,11 @@ extension Execution {
         self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    public func log(_ message: Message, node: XNode? = nil, _ arguments: [String]) {
+    public func log(_ message: Message, node: XNode?, _ arguments: [String]) {
         log(message, at: itemPositionInfo(for: node), arguments)
     }
     
-    public func log(_ message: Message, node: XNode? = nil, _ arguments: String...) {
+    public func log(_ message: Message, node: XNode?, _ arguments: String...) {
         log(message, at: itemPositionInfo(for: node), arguments)
     }
     
@@ -63,11 +63,11 @@ extension AsyncExecution {
         await self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    public func log(_ message: Message, node: XNode? = nil, _ arguments: [String]) async {
+    public func log(_ message: Message, node: XNode?, _ arguments: [String]) async {
         await log(message, at: itemPositionInfo(for: node), arguments)
     }
     
-    public func log(_ message: Message, node: XNode? = nil, _ arguments: String...) async {
+    public func log(_ message: Message, node: XNode?, _ arguments: String...) async {
         await log(message, at: itemPositionInfo(for: node), arguments)
     }
     
