@@ -35,22 +35,22 @@ func itemPositionInfo(for node: XNode?) -> String? {
 
 extension Execution {
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ type: InfoType, _ message: String, at node: XNode?) {
         self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode?) {
         self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ message: Message, node: XNode?, _ arguments: [String]) {
         log(message, at: itemPositionInfo(for: node), arguments)
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ message: Message, node: XNode?, _ arguments: String...) {
         log(message, at: itemPositionInfo(for: node), arguments)
     }
@@ -59,22 +59,22 @@ extension Execution {
 
 extension AsyncExecution {
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ type: InfoType, _ message: String, at node: XNode?) async {
         await self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ type: InfoType, _ message: MultiLanguageText, at node: XNode?) async {
         await self.log(type, message, at: itemPositionInfo(for: node))
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ message: Message, node: XNode?, _ arguments: [String]) async {
         await log(message, at: itemPositionInfo(for: node), arguments)
     }
     
-    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead")
+    @available(*, deprecated, message: "this package is deprecated, use the repository https://github.com/swiftxml/PipelineExtensionsForSwiftXML instead and note the version number being reset to 1.0.0")
     public func log(_ message: Message, node: XNode?, _ arguments: String...) async {
         await log(message, at: itemPositionInfo(for: node), arguments)
     }
